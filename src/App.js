@@ -68,10 +68,6 @@ function App() {
         newErrorMessage('');
         let randomGoldPrice = Math.floor(Math.random() * 20) + 10;
 
-        // inventory.map(goldFound => {
-        //     updateMoney(money+(goldFound*goldPrice));
-        // })
-
         let totalGold = 0;
         inventory.map(goldFound => {
             totalGold += goldFound * goldPrice;
