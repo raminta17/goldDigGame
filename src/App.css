@@ -1,102 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    background-color: #fcfce4;
-    overflow: hidden;
-   display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 100vh;
+	background-color: #fcfce4;
+	display: flex;
+	align-items: center;
+	padding: 50px;
+	height: 100vh;
 }
 #root {
-    width: 100%;
+	width: 100%;
 }
 .f1 {
-    flex: 1;
+	flex: 1;
 }
 .gameBoard {
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    background-color: #eaea09;
+	padding: 20px;
+	border-radius: 30px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	background-color: #eaea09;
 }
 .upgradesCont {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-.upgradesCont, .upgrade, .inventory, .diggedGold {
-    padding: 10px;
-    border-radius: 30px;
-    margin: 10px;
+.upgradesCont,
+.upgrade,
+.inventory,
+.diggedGold {
+	padding: 10px;
+	border-radius: 30px;
+	margin: 10px;
 }
 .upgrade {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    background-color: #ececb5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 120px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	background-color: #ececb5;
 }
 .inventory {
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 400px;
+}
+.inventoryItems {
+	min-height: 200px;
+	overflow: auto;
 }
 .upgrade img {
-    width: 50px;
-    object-fit: cover;
+	width: 50px;
+	object-fit: cover;
 }
-.inventory img, .energyBar img {
-    width: 50px;
-    height: 40px;
+.inventory img,
+.energyBar img {
+	width: 50px;
+	height: 40px;
 }
 .box {
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 10px;
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+		rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+		rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+	padding: 10px;
+	border-radius: 30px;
+	margin: 10px;
 }
-button, .diggedGold, .goldPrice {
-    background-color: #ececb5;
+button,
+.diggedGold,
+.goldPrice {
+	background-color: #ececb5;
+}
+.diggedGold {
+	width: fit-content;
+	height: fit-content;
 }
 .goldPrice {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
 }
-.energyBar, .energy {
-    height: 30px;
-    padding: 0;
+.energyBar,
+.energy {
+	height: 30px;
+	padding: 0;
 }
-.energyBar, .digGoldBtn {
-    width: 100%;
+.energyBar,
+.digGoldBtn {
+	width: 100%;
 }
 .energyBar img {
-    width: 30px;
-    height:100%;
+	width: 30px;
+	height: 100%;
 }
 .digGoldBtn {
-    height: 100px;
+	height: 100px;
 }
 .energy {
-    background-color: #85bba2;
-    border-radius: 30px;
-    display:flex;
+	background-color: #85bba2;
+	border-radius: 30px;
+	display: flex;
 }
-.digGoldBtn, .upgrade , .sellBtn{
-    transition: 0.2s;
-    font-weight: bold;
+.digGoldBtn,
+.upgrade,
+.sellBtn {
+	transition: 0.2s;
+	font-weight: bold;
 }
-.digGoldBtn:hover, .upgrade:hover , .sellBtn:hover {
-    background-color: #f6f2dd;
-    transform: scale(1.01);
+.digGoldBtn:hover,
+.upgrade:hover,
+.sellBtn:hover {
+	background-color: #f6f2dd;
+	transform: scale(1.01);
 }
 .error {
-    color: red;
+	color: red;
+}
+@media (max-width: 768px) {
+	body {
+		padding: 10px;
+		height: auto;
+	}
+	.md-col {
+		flex-direction: column;
+	}
 }
