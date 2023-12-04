@@ -54,10 +54,7 @@ body {
 	justify-content: space-between;
 	height: 400px;
 }
-.inventoryItems {
-	min-height: 200px;
-	overflow: auto;
-}
+
 .upgrade img {
 	width: 50px;
 	object-fit: cover;
@@ -85,7 +82,6 @@ button,
 	height: fit-content;
 }
 .goldPrice {
-	width: 100%;
 	text-align: center;
 	font-weight: bold;
 }
@@ -94,17 +90,17 @@ button,
 	height: 30px;
 	padding: 0;
 }
-.energyBar,
+
 .digGoldBtn {
 	width: 100%;
+	height: 100px;
+	margin: 0;
 }
 .energyBar img {
 	width: 30px;
 	height: 100%;
 }
-.digGoldBtn {
-	height: 100px;
-}
+
 .energy {
 	background-color: #85bba2;
 	border-radius: 30px;
@@ -129,6 +125,10 @@ button,
 	body {
 		padding: 10px;
 		height: auto;
+	}
+	.inventoryItems {
+		height: 120px;
+		overflow: auto;
 	}
 	.md-col {
 		flex-direction: column;
