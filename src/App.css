@@ -78,8 +78,9 @@ button,
 	background-color: #ececb5;
 }
 .diggedGold {
-	width: fit-content;
+	max-width: 80px;
 	height: fit-content;
+	flex: 1;
 }
 .goldPrice {
 	text-align: center;
@@ -132,6 +133,9 @@ button,
 	}
 	.md-col {
 		flex-direction: column;
+	}
+	.upgradesCont {
+		justify-content: center;
 	}
 	.upgrade {
 		margin: 5px;
